@@ -26,7 +26,7 @@ public class ActivityNotesAbout extends AppCompatActivity {
                     getString(R.string.buttons_title_text),
                     "necrobones.6@gmail.com",
                     "+5492615118585",
-                    getString(R.string.my_github_repository));
+                    "https://github.com/Mad-Bones/S-Noter");
 
         }
 

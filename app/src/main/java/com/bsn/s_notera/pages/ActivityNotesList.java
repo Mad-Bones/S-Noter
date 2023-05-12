@@ -165,10 +165,13 @@ public class ActivityNotesList extends AppCompatActivity implements RecyclerMult
         if(typeView == ConstAppVisuals.VistaLista){
             recyclerView.setLayoutManager(listaManager);
             if(selectedRoute.matches(ConstNoterRoutes.RouteMain) && lastTitle.isEmpty()){
+                trash_button.setVisibility(View.VISIBLE);
                 notesListArray = new NotasHelper(this).getNotesArray(this,ConstNoterRoutes.RouteMain);
             }else if(selectedRoute.matches(ConstNoterRoutes.RouteMain) && !lastTitle.isEmpty()){
+                trash_button.setVisibility(View.VISIBLE);
                 notesListArray = new NotasHelper(this).getNotesArraybyTitle(this,ConstNoterRoutes.RouteMain,lastTitle);
             }else if(selectedRoute.matches(ConstNoterRoutes.RouteTrash)){
+                trash_button.setVisibility(View.GONE);
                 new PreferencesAdapter(this).setTitleSearch("");
                 notesListArray = new NotasHelper(this).getNotesArray(this,ConstNoterRoutes.RouteTrash);
             }
@@ -178,6 +181,7 @@ public class ActivityNotesList extends AppCompatActivity implements RecyclerMult
                     this
             );
         }else if(typeView == ConstAppVisuals.VistaCompacta){
+            trash_button.setVisibility(View.GONE);
             recyclerView.setLayoutManager(titlesManager);
             notesTitleArray = new NotasHelper(this).getTitullis(this);
             recyclerMultipleAdapterCompact = new RecyclerMultipleAdapterCompact(
