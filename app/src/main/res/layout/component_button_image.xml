@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_ic_bu"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:tint="@color/black">
+    <ImageView
+        android:id="@+id/button_small"
+        android:src="@drawable/ic_stop"
+        android:scaleType="fitCenter"
+        android:paddingVertical="5dp"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        app:tint="@color/black"/>
+
+</LinearLayout>

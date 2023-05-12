@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:textSize="27sp"
+    android:background="?attr/colorOnPrimary"
+    android:id="@+id/container_search"
+    android:layout_weight="1"
+    android:layout_marginStart="20dp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content" >
+    <EditText
+        android:paddingHorizontal="20dp"
+        android:hint="@string/search"
+        android:textColor="@color/general_green"
+        android:textColorHint="@color/dust_green"
+        android:textSize="27sp"
+        android:background="?attr/colorOnPrimary"
+        android:maxLines="1"
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

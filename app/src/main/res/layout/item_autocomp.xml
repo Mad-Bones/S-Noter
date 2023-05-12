@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/item_comp"
+    android:background="?attr/colorOnPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/titulo_item_comp"
+        android:textSize="19sp"
+        android:textStyle="italic|bold"
+        android:background="@color/general_green"
+        android:textColor="@color/black"
+        android:text="Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">S-Noter</string>
+    <string name="my_full_phone_number">+0000000000</string>
+    <string name="my_email_address">tucorreo@mail.com</string>
+    <string name="my_github_repository">https://github.com/Mad-Bones</string>
+    <string name="send_whats">Enviar Whatsapp</string>
+    <string name="send_mail_to">Enviar Correo</string>
+    <string name="github_repository">Codigo en Github</string>
+    <string name="buttons_title_text">Medios de Contacto:</string>
+    <string name="example_text">EJEMPLO</string>
+    <string name="example_title">TITULO</string>
+    <string name="example_track_title">Titulo - titulo</string>
+    <string name="example_time">00:00</string>
+    <string name="no_email_apps_intalled">No tienes instalada una app para enviar el correo.</string>
+    <string name="feedback">Consulta</string>
+    <string name="title_app">APP VACIA</string>
+    <string name="description_app">Creado por Mad-Bones</string>
+    <string name="about_text_title">Acerca de…</string>
+    <string name="main_text_title">Inicio</string>
+    <string name="settings_title_text">Configuracion</string>
+    <string name="estritura_string">permisos de escritura interna</string>
+    <string name="notifica_string">permisos para mostrar notificaciones</string>
+    <string name="search">Buscar…</string>
+</resources>

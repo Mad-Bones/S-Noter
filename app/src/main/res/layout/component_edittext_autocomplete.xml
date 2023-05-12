@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_auto_simple"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <AutoCompleteTextView
+        android:id="@+id/edittext_simple"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:hint="@string/example_title"
+        android:padding="4dp"
+        android:textColorHint="@color/dust_green"
+        android:inputType="text"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:foreground="@drawable/green_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </AutoCompleteTextView>
+</LinearLayout>
