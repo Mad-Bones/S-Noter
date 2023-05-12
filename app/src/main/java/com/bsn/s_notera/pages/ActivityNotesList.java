@@ -211,22 +211,6 @@ public class ActivityNotesList extends AppCompatActivity implements RecyclerMult
         startActivity(new Intent(ActivityNotesList.this,ActivityNotesCreate.class));
         finish();
     }
-    @SuppressLint("NotifyDataSetChanged")
-    public void setLista(List<Objeto> notes) {
-        notesListArray.clear();
-        notesListArray.addAll(notes);
-        if(recyclerMultipleAdapterList!=null){
-            recyclerMultipleAdapterList.notifyDataSetChanged();
-        }
-    }
-    @SuppressLint("NotifyDataSetChanged")
-    public void setTitulos(List<String> notes) {
-        notesTitleArray.clear();
-        notesTitleArray.addAll(notes);
-        if(recyclerMultipleAdapterCompact!=null) {
-            recyclerMultipleAdapterCompact.notifyDataSetChanged();
-        }
-    }
 
     @Override
     public void onBackPressed() {

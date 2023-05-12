@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import com.bsn.s_notera.constanst.ConstNoterRoutes;
 import com.bsn.s_notera.pages.ActivityNotesCreate;
-import com.bsn.s_notera.pages.ActivityNotesList;
-import com.bsn.s_notera.tools.lists.ListFilters;
 
 import java.util.ArrayList;
 import java.util.List;
