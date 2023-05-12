@@ -24,9 +24,9 @@ public class ActivityNotesAbout extends AppCompatActivity {
             new AddContactButtons(
                     this,
                     getString(R.string.buttons_title_text),
-                    "necrobones.6@gmail.com",
-                    "+5492615118585",
-                    "https://github.com/Mad-Bones/S-Noter");
+                    getString(R.string.my_email_address),
+                    getString(R.string.my_full_phone_number),
+                    getString(R.string.my_github_repository));
 
         }
 

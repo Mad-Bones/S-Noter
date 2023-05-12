@@ -2,7 +2,7 @@
     <string name="app_name">S-Noter</string>
     <string name="my_full_phone_number">+0000000000</string>
     <string name="my_email_address">tucorreo@mail.com</string>
-    <string name="my_github_repository">https://github.com/Mad-Bones</string>
+    <string name="my_github_repository">https://github.com/Mad-Bones/S-Noter</string>
     <string name="send_whats">Enviar Whatsapp</string>
     <string name="send_mail_to">Enviar Correo</string>
     <string name="github_repository">Codigo en Github</string>
