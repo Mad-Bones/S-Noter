@@ -1,7 +1,7 @@
 # S-Noter
 12-05-23
 
-<img src="https://github.com/Mad-Bones/S-Noter/blob/master/app/src/main/res/drawable/ic_notes.xml" width="100" />
+<img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/ic_notes.PNG" width="100" />
 
 Uso de RoomDatabase
 Funcion:
@@ -10,14 +10,6 @@ Eliminar lista dentro de RoomDatabase
 Agregar datos a RoomDatabase
 
 
-Descargar prueba: [PULSA AQUI](https://github.com/Mad-Bones/S-Noter/apk-sample/S-noter A.apk)
+Descargar prueba: [PULSA AQUI](https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/S-noter_a.apk)
   
-<img src="https://github.com/Mad-Bones/S-Noter/apk-sample/scren1.png" width="250" />
-  
-<img src="https://github.com/Mad-Bones/S-Noter/apk-sample/scren2.png" width="250" />
-  
-<img src="https://github.com/Mad-Bones/S-Noter/apk-sample/scren3.png" width="250" />
-  
-<img src="https://github.com/Mad-Bones/S-Noter/apk-sample/scren4.png" width="250" />
-  
-<img src="https://github.com/Mad-Bones/S-Noter/apk-sample/scren5.png" width="250" />
+<img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/scren1.png" width="250" /> <img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/scren2.png" width="250" /> <img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/scren3.png" width="250" /> <img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/scren4.png" width="250" /> <img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/scren5.png" width="250" />
