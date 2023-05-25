@@ -23,6 +23,7 @@ import com.bsn.s_notera.tools.buttons.AddSimpleTextButton;
 import com.bsn.s_notera.tools.containers.AddEmptyBoxContainer;
 import com.bsn.s_notera.tools.containers.AddEmptyBoxContainerHorizontal;
 import com.bsn.s_notera.tools.containers.AddEmptyBoxContainerInf;
+import com.bsn.s_notera.tools.containers.AddEmptyHorizontalContainer;
 import com.bsn.s_notera.tools.sistem.ShareText;
 import com.bsn.s_notera.tools.text.AddTextEditUnderlined;
 import com.bsn.s_notera.tools.text.AddTextEditWhitList;
@@ -80,9 +81,11 @@ public class ActivityNotesCreate extends AppCompatActivity {
             new ShareText.Share(this,content_edit.getText().toString()).execute();
         });
 
+        /** BOTONES INFERIORES */
         LinearLayout boxB = new AddEmptyBoxContainerInf().BoxContainer(this);
-        button_erase = new AddSimpleTextButton().TextButton(this,"Borrar",boxB);
-        button_back = new AddSimpleTextButton().TextButton(this,"Volver",boxB);
+        LinearLayout boxBA = new AddEmptyHorizontalContainer().BoxContainer(this,boxB);
+        button_erase = new AddSimpleTextButton().TextButton(this,"Borrar",boxBA);
+        button_back = new AddSimpleTextButton().TextButton(this,"Volver",boxBA);
         button_save = new AddSimpleTextButton().TextButton(this,"Guardar",boxB);
 
         preloadData();

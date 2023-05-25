@@ -7,11 +7,12 @@
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#4C8536</item>
-        <item name="colorSecondaryVariant">#4C8536</item>
+        <item name="colorSecondaryVariant">@color/general_greendark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/inconsolata_font</item>
+        <item name="subtitleTextColor">#072700</item>
     </style>
 </resources>

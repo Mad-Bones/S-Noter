@@ -26,7 +26,6 @@
         <ScrollView
             android:overScrollMode="never"
             android:layout_width="match_parent"
-            android:paddingVertical="10dp"
             android:layout_height="wrap_content">
             <LinearLayout
                 android:id="@+id/container_general"

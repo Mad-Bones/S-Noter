@@ -23,7 +23,7 @@ public class EditTextUnderlined extends androidx.appcompat.widget.AppCompatEditT
 
         TypedValue typedValue = new TypedValue();
         Resources.Theme theme = context.getTheme();
-        theme.resolveAttribute(androidx.appcompat.R.attr.colorPrimary, typedValue, true);
+        theme.resolveAttribute(androidx.appcompat.R.attr.subtitleTextColor, typedValue, true);
         @ColorInt int color = typedValue.data;
 
         this.setBackground(null);

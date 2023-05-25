@@ -1,33 +1,55 @@
 package com.bsn.s_notera.pages;
 
-import android.Manifest;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.bsn.s_notera.R;
-import com.bsn.s_notera.preferences.PermisosHandler;
 import com.bsn.s_notera.preferences.PreferencesAdapter;
 
 public class ActivitySplash extends AppCompatActivity {
 
     Handler handlerfin;
     Intent intenta;
-    PermisosHandler permisosHandler;
+    final private static int REQUEST_ALMACENAMIENTO = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen_splash);
         handlerfin = new Handler();
-        permisosHandler = new PermisosHandler(this);
 
         intenta=new Intent(ActivitySplash.this, ActivityNotesList.class);
-        askStoragePermission();
+        if(!CheckStoragePermissions()){
+            RequestStoragePermissions();
+        }else{
+            checkFirstTime();
+        }
+
+    }
+
+    /** PEDIDO DE PERMISOS */
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case REQUEST_ALMACENAMIENTO:
+                checkFirstTime();
+                break;
+        }
+    }
+    public boolean CheckStoragePermissions() {
+        int result = ContextCompat.checkSelfPermission(getApplicationContext(), WRITE_EXTERNAL_STORAGE);
+        return result == PackageManager.PERMISSION_GRANTED;
+    }
+    public void RequestStoragePermissions() {
+        ActivityCompat.requestPermissions(this, new String[]{WRITE_EXTERNAL_STORAGE}, REQUEST_ALMACENAMIENTO);
     }
     private void checkFirstTime(){
         if(new PreferencesAdapter(this).fistTime()){
@@ -43,23 +65,5 @@ public class ActivitySplash extends AppCompatActivity {
         }
     }
 
-    private void askStoragePermission(){
-        if ((ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)) {
-            permisosHandler.requestAlmacenamientoPermisos();
-            askStoragePermission();
-            return;
-        }else{
-            checkFirstTime();
-        }
-    }
-    public PermisosHandler getPermissionHandlerPer() {
-        return permisosHandler;
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        Log.d("TAG", "onRequestPermissionsResult: requestCode " + requestCode);
-        permisosHandler.onRequestPermissionsResult(requestCode, grantResults);
-    }
 
 }
