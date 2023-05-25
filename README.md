@@ -1,5 +1,5 @@
 # S-Noter
-12-05-23
+25-05-23
 
 <img src="https://github.com/Mad-Bones/S-Noter/blob/master/apk-sample/ic_notes.PNG" width="100" />
 
